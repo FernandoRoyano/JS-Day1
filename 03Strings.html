@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Backtips
+
+        let client = { firstname: 'Pablo', lastName: 'Quintana' }
+
+        console.log(typeof client)
+
+        console.log(`El cliente se llama ${client.firstname} y se apellida ${client.lastName}`)
+
+
+        //String length
+
+        let textaco = 'Lorem ipsum dolor sit amet contetur adipisicing elit. Ut eos nam quis unde a odit, iste veniam, voluptatem officia minus sunt delectus. Expedita suscipit corrupti voluptatibus voluptatum nemo neque molestiae.'
+        console.log('El texto tiene', textaco.length, 'caracteres')
+
+        console.warn("---------------------")
+
+        //String .charAt() method
+
+        const greeting = 'Hello world!'
+        console.log(greeting.charAt(1))
+        console.log(greeting.charAt(5))
+        console.log(typeof greeting.charAt(20))
+
+        // .indexOf methos
+
+        const message = "Qué pasa neng?"
+
+        console.log(message.indexOf("pasa"))  // 4
+        console.log(message.indexOf("a"))    // 5
+        console.log(message.indexOf("pepe"))  //-1 
+
+
+        // .substring() method
+
+        const message2 = "Don't worry, be happy"
+        let partOfMessage = message2.substring(6, 11)
+        console.log(partOfMessage)
+
+
+        //.substr()
+
+        console.log(message2.substr(6, 5))
+
+        // startswith()
+
+        console.log(message2.startsWith("Do")) //true
+        console.log(message2.startsWith("ljshfgajs")) //false
+
+
+        console.warn("-------------")
+        // .includes()
+
+        console.log(message2.includes("worry"))
+        console.log(message2.includes("pablo"))
+        console.log(message2.includes("worry", 7))
+
+
+
+
+    </script>
+</body>
+
+</html>
